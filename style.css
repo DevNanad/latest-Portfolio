@@ -1,0 +1,46 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    color: #ffffff;
+    background-color: #435B66;
+}
+
+nav{
+    background-color: #2D4356;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+    align-items: center;
+}
+
+nav img{
+    height: 5rem;
+    width: 5rem;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+    list-style: none;
+    padding-right: 5rem;
+    
+}
+
+nav ul li{
+    color: #ffffff;
+    font-size: 32px;
+    font-family: 'Inter', sans-serif;
+}
+
+nav ul li:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+    color: #EAB2A0;
+}
