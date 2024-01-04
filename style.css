@@ -160,3 +160,86 @@ nav ul li:hover{
     height: 100%;
     z-index: 1;
 }
+
+/*-----------------------ABOUT SECTION STYLES----------------- */
+.about {
+    display: flex;
+    margin-top: 5rem;
+    padding: 4rem 10rem 0;
+    height: 80svh;
+
+}
+.story {
+    position: relative;
+    padding: 1rem 5rem;
+    
+}
+
+.story h1{
+    font-size: 37px;
+    padding-bottom: 5rem;
+    font-family: 'Popoins', sans-serif;
+    
+}
+
+.story img{
+    position: absolute;
+    top: 5rem;
+    left: -3rem;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 10%;
+}
+
+.story p{
+    font-size: 28px;
+    padding-top: 2rem;
+    font-family: 'Inter', sans-serif;
+    text-indent: 4rem;
+}
+
+.story, .about-profile{
+    flex: 1;
+}
+
+.about-profile{
+    padding: 0 4rem;
+    position: relative;
+}
+
+.about-card{
+    background-color: #2D4356;
+    border-radius: 1.5rem;
+    position: relative;
+    height: 30rem;
+    width: 30rem;
+    margin-top: 9rem;
+    transform: rotate(45deg);
+    overflow: hidden;
+}
+
+.about-profile #star-img{
+    height: 8rem;
+    width: 8rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.about-profile #aboutme-img{
+    position: absolute;
+    height: 50rem;
+    z-index: 1;
+    transform: translateX(-9rem) translateY(6rem);
+}
+
+.about-card #sparkle-img{
+    position: absolute;
+    transform: scale(1.2);
+    top: -4rem;
+    left: -2rem;
+    z-index: 2;
+    animation: pulse 0.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
