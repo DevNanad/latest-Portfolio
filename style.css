@@ -55,9 +55,9 @@ nav ul li:hover{
 
 .home{
     display: flex;
-    padding: 4rem 10rem 0;
+    padding: 1rem 5rem 0;
     height: 80svh;
-    padding-top: 10rem;
+    padding-top: 7rem;
 }
 
 .greetings, .profile{
@@ -88,7 +88,7 @@ nav ul li:hover{
     height: 5rem;
     width: 5rem;
     position: absolute;
-    top: 0;
+    top: 2rem;
     right: 0;
     animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
@@ -136,6 +136,7 @@ nav ul li:hover{
 
 .profile{
     padding: 0 4rem;
+    height: 80vh;
 }
 
 .profile .profile-card{
@@ -249,3 +250,157 @@ nav ul li:hover{
     z-index: 2;
     animation: pulse 0.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
+
+/*-----------------------PROJECTS SECTION STYLES----------------- */
+
+.project{
+    padding-top: 10rem;
+}
+
+.project h1{
+    font-size: 37px;
+    padding-bottom: 5rem;
+    font-family: 'Popoins', sans-serif;
+    padding-left: 5rem;
+}
+
+.project .tag-container{
+    padding-left: 5rem;
+    padding: 2rem 5rem 2rem;
+}
+
+.project .tag-container span{
+    padding: 0.5rem 1rem;
+    background-color: #A76F6F;
+    border-radius: 0.2rem;
+}
+
+.project .latest-container{
+    text-align: center;
+}
+.project .latest-container h1{
+    font-size: 2.2rem;
+    padding-bottom: 0;
+    font-family: 'Inter', sans-serif;
+    text-decoration: underline;
+    animation: bounce 2s infinite;
+}
+
+.project .projects-latest{
+    display: grid;
+    padding: 0.5rem 5rem;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.project .projects-latest .project-card{
+    display: flex;
+    background-color: #2D4356;
+    padding: 2rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.project .projects-latest .project-card .system-img-container{
+    flex: 1;
+}
+
+.project .projects-latest .project-card .system-img-container img{
+    width: 40rem;
+    object-fit: cover;
+    border-radius: 0.4rem;
+}
+
+.project .projects-latest .project-card .project-description{
+    text-align: center;
+    flex-grow: 1;
+}
+
+.project .projects-latest .project-card .project-description h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.project .projects-latest .project-card .project-description p{
+    font-size: 1rem;
+    text-align: left;
+    padding: 0 2rem ;
+    font-family: 'Poppins', sans-serif;
+}
+
+.project .projects-old{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding: 0 5rem;
+    gap: 5rem;
+}
+
+.project .other-container{
+    padding: 0.5rem;
+}
+
+.project .other-container h1{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.project .projects-old .project-old-card{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #2D4356;
+    border-radius: 1rem;
+    padding-bottom: 1rem;
+}
+.project .projects-old .project-old-card .system-img-container{
+    flex: 1;
+    width: 100%;
+}
+
+.project .projects-old .project-old-card .system-img-container img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.project .projects-old .project-old-card .project-description{
+    text-align: center;
+    padding: 0.7rem 1rem;
+}
+
+.project .projects-old .project-old-card .project-description p{
+    text-align: left;
+    padding-top: 0.5rem;
+}
+
+.project .projects-old-mobile{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 0 5rem;
+    gap: 5rem;
+}
+
+.project .projects-old-mobile .project-old-card{
+    flex: 1;
+    display: flex;
+}
+
+.project .projects-old-mobile .project-old-card .system-img-container{
+    height: 20rem;
+}
+.project .projects-old-mobile .project-old-card .system-img-container img{
+    object-fit: contain;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.project .projects-old-mobile .project-old-card .project-description{
+    text-align: center;
+    padding: 0.7rem 1rem;
+}
+
+.project .projects-old-mobile .project-old-card .project-description p{
+    text-align: left;
+    padding-top: 0.5rem;
+}             
