@@ -77,7 +77,9 @@ nav ul li:hover{
 }
 
 .greetings h1 span{
-    color: #A76F6F;
+    color: hotpink;
+  text-align: center;
+  text-shadow: 0 0 5px white, 0 0 4px hotpink, 0 0 3px hotpink, 0 0 4px hotpink, 0 0 5px hotpink, 0 0 6px hotpink, 0 0 7px hotpink;
 }
 
 .greetings p{
@@ -98,6 +100,9 @@ nav ul li:hover{
     width: 100%;
     text-align: center;
 }
+.greetings hr{
+    margin: 0 0 1rem 0;
+}
 
 .greetings .btn button{
     padding: 1rem 2rem;
@@ -105,6 +110,12 @@ nav ul li:hover{
     border: none;
     border-radius: 10px;
     align-self:center ;
+}
+
+.greetings .btn button:hover{
+    transform: scale(110%);
+    transition-duration: 150ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .greetings .btn button a{
@@ -141,9 +152,23 @@ nav ul li:hover{
 
 .profile .profile-card{
     background-color: #2D4356;
-    border-radius: 1.5rem;
+    border-radius: 50%;
+    overflow: hidden;
     position: relative;
     height: 100%;
+    animation: neon-animation 1.5s infinite alternate; /* Adding animation */
+      
+}
+
+@keyframes neon-animation {
+  0% {
+    opacity: 0.6;
+    box-shadow: 0 0 5px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff;
+  }
+  100% {
+    opacity: 1;
+    box-shadow: 0 0 10px #ffffff, 0 0 30px #ffffff, 0 0 50px #ffffff;
+  }
 }
 
 .profile .profile-card img:nth-child(1){
@@ -303,6 +328,11 @@ nav ul li:hover{
 .project .projects-latest .project-card .system-img-container{
     flex: 1;
 }
+.project .projects-latest .project-card:hover{
+    transform: scale(103%);
+    transition-duration: 400ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .project .projects-latest .project-card .system-img-container img{
     width: 40rem;
@@ -352,6 +382,11 @@ nav ul li:hover{
     border-radius: 1rem;
     padding-bottom: 1rem;
 }
+.project .projects-old .project-old-card:hover{
+    transform: scale(110%);
+    transition-duration: 400ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .project .projects-old .project-old-card .system-img-container{
     flex: 1;
     width: 100%;
@@ -385,6 +420,11 @@ nav ul li:hover{
     flex: 1;
     display: flex;
 }
+.project .projects-old-mobile .project-old-card:hover{
+    transform: scale(110%);
+    transition-duration: 400ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .project .projects-old-mobile .project-old-card .system-img-container{
     height: 20rem;
@@ -404,3 +444,76 @@ nav ul li:hover{
     text-align: left;
     padding-top: 0.5rem;
 }             
+
+/*-----------------------SKILLS SECTION STYLES----------------- */
+
+.skill{
+    padding-top: 7rem;
+}
+
+.skill h1{
+    padding: 1rem;
+}
+
+.skills-container{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding: 0 1rem;
+}
+
+.tech{
+    position: relative;
+    grid-column: span 2 / span 2;
+    background-color: #2D4356;
+    padding: 0 2rem 2rem;
+    height: 70vh;
+    border-radius: 1rem;
+    overflow-y: auto;
+    animation: img-box-animation 1.5s infinite alternate; /* Adding animation */
+}
+.icon-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.skills-img h2{
+    text-align: center;
+    padding: 3.3rem 0;
+    font-size: 28px;
+    text-decoration: underline;
+    text-decoration-color: #14b8a6;
+    font-family: 'Poppins', sans-serif;
+}
+
+.skills-progress{
+    grid-column: span 1 / span 1;
+    border-left: 0.5rem solid rgb(255, 244, 244);
+}
+
+@keyframes img-box-animation {
+    0% {
+      opacity: 0.6;
+      box-shadow: 0 0 5px #818080, 0 0 20px #818080, 0 0 30px #818080;
+    }
+    100% {
+      opacity: 1;
+      box-shadow: 0 0 10px #818080, 0 0 30px #818080, 0 0 50px #818080;
+    }
+  }
+.icon-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.icon-container h3{
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+}
+.icon-container img{
+    height: 7rem;
+    width: 7rem;
+}
+
